@@ -1,0 +1,8 @@
+Map Area: Hyderabad
+I am interested to find out map information of my hometown, more specifically the places, 
+where I did my schooling, and take this opportunity to contribute to OpenStreetmap
+
+http://overpass-api.de/api/map?bbox=78.5104,17.3358,78.5902,17.4077
+
+I took a part of my city database, the complete city database was quite huge, 
+so I took a part out of my city, mainly the place where I grew up
