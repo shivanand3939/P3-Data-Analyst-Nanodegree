@@ -1,0 +1,41 @@
+#Create Tables in Sqlite3
+
+create Table NODES (id	INTEGER,
+ lat REAL,
+ lon REAL,
+ user TEXT,
+ uid INTEGER,
+ version TEXT,
+ changeset	INTEGER,
+ timestamp TEXT);
+
+ create Table NODE_TAGS(id	INTEGER,
+key	TEXT,
+value TEXT,
+type TEXT);
+
+create Table WAYS(id	INTEGER,
+user TEXT,
+uid	INTEGER,
+version	TEXT,
+changeset INTEGER,
+timestamp TEXT
+);
+
+create Table WAY_NODES(id	INTEGER,
+node_id	INTEGER,
+position INTEGER);
+
+create Table WAY_TAGS(id	INTEGER,
+key	TEXT,
+value TEXT,
+type TEXT);
+
+#Import Tables to Sqlite3
+.import 'nodes.csv' NODES
+.import 'nodes_tags.csv' NODE_TAGS
+.import 'ways.csv' WAYS
+.import 'ways_nodes.csv' WAY_NODES
+.import 'ways_tags.csv' WAY_TAGS
+
+#Data processing and Analysis is shown in the report
